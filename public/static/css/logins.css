@@ -1,0 +1,78 @@
+
+ .login_box{
+	width:550px;
+	height:350px;
+	z-index:9999;
+	background:#FFFFFF;
+	position:fixed;
+	display:none;
+    margin:auto;
+    left:0; 
+    right:0; 
+    top:0; 
+    bottom:0;
+}
+.admin_login_wrap  h4 {
+	text-align:center;
+	font-size:24px;
+	color:#333333;
+	margin:15px 0;
+} 
+.admin_login_wrap  h4{
+	text-align:center;
+	font-size:20px;
+	
+}
+.admin_login_wrap a{
+	color:#3481CF;
+}
+.admin_items{
+	margin-top:35px;
+}
+.admin_items li{
+	text-align:center;
+}
+.admin_items  input{
+	width:266px;
+	height:36px;
+	border-radius:2px ;
+	border: 1px solid #D5D5D5;
+	margin: 0 auto;
+	font-size:14px;
+	margin-bottom:15px;
+	text-indent:10px;
+}
+.admin_items .btn-primary{
+	background:#86CE2F;
+    font-size:17px;
+    color:#ffffff;
+}
+.login_bottom{
+	text-align:right;	
+	margin-right:8px;
+}
+.login_bottom a{
+	font-size:8px;
+	color:#666666;
+}
+.login_close{
+	position:absolute;
+	top:0;
+	right:0;
+	height:20px;
+	width:46px;
+	text-align:center;
+	font-size:24px;
+}
+.login_close a{
+	display:block;
+	color:#666666;
+}
+.login_close a:hover{
+	text-decoration:none;
+	background:#F7ADA0;
+	color:#fff;
+}
+.dingbu2{ width:150px; margin:auto; height:21px; font-size:12px; color:#ff3b30; margin-top:5px;  visibility: hidden; line-height:21px;}
+img{ display: inline;}
+/*  |xGv00|a67f799b37150d263f69a3c1123ed9a5 */
