@@ -1,0 +1,87 @@
+<?php /*a:1:{s:76:"E:\phpStudy\PHPTutorial\WWW\ljh\application\backstage\view\index\welcome.htm";i:1553305231;}*/ ?>
+<!DOCTYPE html>
+<html class="x-admin-sm">
+<head>
+<meta charset="UTF-8">
+<title>欢迎页面-X-admin2.1</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+<link rel="stylesheet" href="/static/css/font.css">
+<link rel="stylesheet" href="/static/css/xadmin.css">
+</head>
+<body>
+<div class="x-body">
+  <blockquote class="layui-elem-quote">欢迎管理员： <span class="x-red"><?php echo htmlentities($uname); ?></span>！<span id="mytime"></span></blockquote>
+  <fieldset class="layui-elem-field">
+    <legend>系统信息</legend>
+    <div class="layui-field-box">
+      <table class="layui-table">
+        <tbody>
+          <tr>
+            <th>当前IP</th>
+            <td><?php echo htmlentities($ip); ?></td>
+          </tr>
+          <tr>
+            <th>操作系统</th>
+            <td><?php echo htmlentities($os); ?></td>
+          </tr>
+          <tr>
+            <th>运行环境</th>
+            <td><?php echo htmlentities($environment); ?></td>
+          </tr>
+          <tr>
+            <th>PHP版本</th>
+            <td><?php echo htmlentities($version); ?></td>
+          </tr>
+          <tr>
+            <th>PHP运行方式</th>
+            <td>cgi-fcgi</td>
+          </tr>
+          <tr>
+            <th>浏览器语言</th>
+            <td><?php echo htmlentities($language); ?></td>
+          </tr>
+          <tr>
+            <th>ThinkPHP</th>
+            <td><?php echo htmlentities(app()->version()); ?></td>
+          </tr>
+          <tr>
+            <th>上传附件限制</th>
+            <td><?php echo htmlentities($file_uploads); ?></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </fieldset>
+  <fieldset class="layui-elem-field">
+    <legend>开发团队</legend>
+    <div class="layui-field-box">
+      <table class="layui-table">
+        <tbody>
+          <tr>
+            <th>版权所有</th>
+            <td>xxx</td>
+          </tr>
+          <tr>
+            <th>开发者</th>
+            <td>xxx</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </fieldset>
+  <blockquote class="layui-elem-quote layui-quote-nm">感谢layui,百度Echarts,jquery,本系统由x-admin提供技术支持。</blockquote>
+</div>
+<script type="text/javascript">
+function showTime(){
+    nowtime=new Date();
+    year=nowtime.getFullYear();
+    month=nowtime.getMonth()+1;
+    date=nowtime.getDate();
+    document.getElementById("mytime").innerText=year+"年"+month+"月"+date+" "+nowtime.toLocaleTimeString();
+}
+setInterval("showTime()",1000);
+</script>
+</body>
+</html>
